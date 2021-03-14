@@ -1,1 +1,1 @@
-document.getelementbyid('tes').innerHTML = 'Lorem ipsum';
+document.getElementById('tes').innerHTML = 'Lorem ipsum';
