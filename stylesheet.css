@@ -51,9 +51,7 @@ header {
     position: fixed;
     width: 100vw;
     top: 0;
-    /*sementara*/
-    backdrop-filter: blur(4px) saturate(120%);
-    -webkit-backdrop-filter: blur(4px) saturate(120%);
+    
 }
 
 header div {
@@ -63,6 +61,9 @@ header div {
     z-index: 2;
     position: absolute;
     width: 100vw;
+    /*sementara*/
+    backdrop-filter: blur(4px) saturate(120%);
+    -webkit-backdrop-filter: blur(4px) saturate(120%);
 }
 
 #toggle-nav {
