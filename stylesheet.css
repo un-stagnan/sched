@@ -11,7 +11,12 @@
     --abang-oranye:linear-gradient(315deg, #ff0f7b 0%, #f89c2a 100%);
     --ungu-biru: linear-gradient(320deg, #42caff 0%, #c100d6 100%);
     --tosca-biru: linear-gradient(215deg, #40047c 0%, #07f29c 100%);
+  }
 
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+    display: none;
   }
 
 body {
@@ -28,7 +33,7 @@ body {
 .card {
     border-radius: 8px;
     padding: 12px;
-    margin: 1rem;
+    margin: 1.25rem .9rem;
 }
 
 .konten {
@@ -51,17 +56,15 @@ header {
     position: fixed;
     width: 100vw;
     top: 0;
-    
 }
 
 header div {
     padding: .5rem  1rem;
     background-color: #1d2433e6;
     box-shadow: 0px 4px 8px #1118;
-    z-index: 2;
+    z-index: 999;
     position: absolute;
     width: 100vw;
-    /*sementara*/
     backdrop-filter: blur(4px) saturate(120%);
     -webkit-backdrop-filter: blur(4px) saturate(120%);
 }
@@ -149,17 +152,30 @@ label[for="toggle-nav"] span {
 }
 
 .depan div {
-    padding: 5rem 0;
-    font-family: poppins;
-    background: var(--tosca-biru);
+  padding: 3rem;
+  font-family: poppins;
+  background: var(--klawu);
 }
 
-.depan div span {
+.depan div {
     display: block;
     text-align: center;
     font-size: 2.5rem;
 }
 
+.depan div span {
+  background: var(--ungu-biru);
+  -webkit-background-clip: text;
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.depan div p + p span {
+  background: var(--abang-oranye);
+  -webkit-background-clip: text;
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* particular */
 
 .judul {
@@ -176,6 +192,9 @@ label[for="toggle-nav"] span {
     padding: .5rem 16px;
 }
 
+.hari:last-child {
+  margin-bottom: 3rem;
+}
 
 .hari h4 {
     margin: .5rem 0 1rem;
@@ -189,10 +208,9 @@ label[for="toggle-nav"] span {
     background-color: #1c2036;
     /* background: linear-gradient(315deg, #1f2242 0%, #303761 100%); */
     padding: 1rem .8rem;
-    margin: .9rem 0;
+    margin: 1rem 0;
     box-shadow: 6px 6px 8px #171b26, -6px -6px 8px #2f334b;
 }
-
 
 .matkul span, .card .warna {
     display: block;
@@ -210,7 +228,7 @@ label[for="toggle-nav"] span {
 
 .warna {
     font-family: poppins, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: .8rem 0;
     width: fit-content;
     background: var(--abang-oranye);
@@ -225,6 +243,7 @@ label[for="toggle-nav"] span {
     padding-top: .8rem;
     width: 90%;
     margin: auto;
+    font-size: .86rem;
 }
 
 .hubungi {
@@ -240,12 +259,76 @@ label[for="toggle-nav"] span {
 }
 
 /* media query */
+
+@media screen and (min-width: 481px) {
+  .flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+  #navigasi {
+    width: 42vw;
+    padding: 6rem 2rem;
+  }
+
+  .hari {
+    width: 256px;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+
+  .matkul .warna {
+    font-size: 1.25rem;
+  }
+
+}
+
 @media screen and (min-width: 720px) {
     .wrapper {
-        width: 86%;
+        width: 90%;
     }
 
     #navigasi {
         width: 24vw;
     }
+
+    .judul h3 {
+      text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+
+  .flex-wrapper {
+    display: flex;
+  }
+
+  .hari {
+    width: 100%;
+    max-width: 1120px;
+    padding-bottom: .7rem;
+  }
+
+  .hari h4 {
+    margin: .8rem 0 .3rem;
+  }
+
+  .matkul-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+  .matkul {
+    margin: .7rem;
+    width: 232px;
+  }
+
 }
