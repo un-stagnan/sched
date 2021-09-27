@@ -212,18 +212,33 @@ label[for="toggle-nav"] span {
     box-shadow: 6px 6px 8px #171b26, -6px -6px 8px #2f334b;
 }
 
-.matkul span, .card .warna {
+.card .warna {
     display: block;
 }
 
-.matkul .jam {
+.matkul .jam, .matkul .ruang {
     font-size: .8rem;
-    background-color: #fff;
     color: #111;
     width: fit-content;
     padding: .4rem .5rem .1rem;
-    border-radius: 2rem;
-    margin: auto;
+    border: 1px solid var(--putih);
+}
+
+.matkul .jam {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-color: var(--putih);
+    margin-right: -2px;
+    border-right: 0;
+    padding-right: .4rem;
+}
+
+.matkul .ruang {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    color: var(--putih);
+    margin-left: -2px;
+    padding-left: .4rem;
 }
 
 .warna {
