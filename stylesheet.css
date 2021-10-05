@@ -254,7 +254,7 @@ label[for="toggle-nav"] span {
     margin: auto;
 }
 
-.warna .mk-tambahan {
+.warna .mk-tambah {
     background: var(--tosca-biru);
     -webkit-background-clip: text;
     background-clip: text;
