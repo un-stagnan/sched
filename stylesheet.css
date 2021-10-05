@@ -8,9 +8,10 @@
     --abang: #fe005d;
     --biru: #1749ff;
     --klawu: #22272c;
-    --abang-oranye:linear-gradient(315deg, #ff0f7b 0%, #f89c2a 100%);
+    --abang-oranye: linear-gradient(315deg, #ff0f7b 0%, #f89c2a 100%);
     --ungu-biru: linear-gradient(320deg, #42caff 0%, #c100d6 100%);
-    --tosca-biru: linear-gradient(215deg, #40047c 0%, #07f29c 100%);
+    --tosca-ungu: linear-gradient(215deg, #40047c 0%, #07f29c 100%);
+    --tosca-biru: linear-gradient( 45deg, #42caff 0%, #07f29c 100%);
   }
 
   ::-webkit-scrollbar {
@@ -251,6 +252,13 @@ label[for="toggle-nav"] span {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: auto;
+}
+
+.warna .mk-tambahan {
+    background: var(--tosca-biru);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .lec {
