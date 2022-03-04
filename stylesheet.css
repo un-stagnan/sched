@@ -254,7 +254,7 @@ label[for="toggle-nav"] span {
     margin: auto;
 }
 
-.warna.mk-tambah {
+.praktikum .warna {
     background: var(--tosca-biru);
     -webkit-background-clip: text;
     background-clip: text;
@@ -267,18 +267,6 @@ label[for="toggle-nav"] span {
     width: 90%;
     margin: auto;
     font-size: .86rem;
-}
-
-.hubungi {
-    display: block;
-    margin: 2rem ;
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-    background: var(--tosca-biru);
-    background-color: var(--biru);
-    padding: 1rem 1.5rem;
-    font-family:'poppins', sans-serif;
 }
 
 /* media query */
