@@ -252,6 +252,7 @@ label[for="toggle-nav"] span {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: auto;
+    border-bottom: 1px solid #888;
 }
 
 .praktikum .warna {
@@ -262,7 +263,6 @@ label[for="toggle-nav"] span {
 }
 
 .lec {
-    border-top: 1px solid #888;
     padding-top: .8rem;
     width: 90%;
     margin: auto;
