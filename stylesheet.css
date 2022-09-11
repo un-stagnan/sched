@@ -208,9 +208,14 @@ label[for="toggle-nav"] span {
     text-align: center;
     background-color: #1c2036;
     /* background: linear-gradient(315deg, #1f2242 0%, #303761 100%); */
-    padding: 1rem .8rem;
+    padding: 1rem;
     margin: 1rem 0;
     box-shadow: 6px 6px 8px #171b26, -6px -6px 8px #2f334b;
+}
+
+.matkul > div {
+    padding-top: 0.9rem;
+    top: 4px;
 }
 
 .card .warna {
@@ -246,7 +251,7 @@ label[for="toggle-nav"] span {
     font-family: poppins, sans-serif;
     font-size: 1.25rem;
     padding: .8rem 0;
-    width: fit-content;
+/*     width: fit-content; */
     background: var(--abang-oranye);
     -webkit-background-clip: text;
     background-clip: text;
