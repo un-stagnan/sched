@@ -6,7 +6,7 @@ const jadwal = {
   ],
 
   'Selasa' : [
-    {'jam': '13.00 - 15.00', 'ruang' : 'F-503', 'matkul': 'Mikrokontroler', 'dosen' : 'Rhesma Intan Vidyastari, S.T., M.T.'}
+    {'jam': '10.10 - 11.50', 'ruang' : 'F-503', 'matkul': 'Mikrokontroler', 'dosen' : 'Rhesma Intan Vidyastari, S.T., M.T.'}
   ],
 
   'Rabu' : [
