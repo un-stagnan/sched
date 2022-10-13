@@ -6,7 +6,7 @@ const jadwal = {
   ],
 
   'Selasa' : [
-    {'jam': '09.20 - 11.50', 'ruang' : 'D-304', 'matkul': 'Pengolahan Citra Digital', 'dosen' : 'Jawwad Sulthon Habiby, S.T., M.T.'},
+    {'jam': '07.40 - 09.20', 'ruang' : 'D-304', 'matkul': 'Pengolahan Citra Digital', 'dosen' : 'Jawwad Sulthon Habiby, S.T., M.T.'},
     {'jam': '10.10 - 11.50', 'ruang' : 'F-503', 'matkul': 'Mikrokontroler', 'dosen' : 'Rhesma Intan Vidyastari, S.T., M.T.'}
   ],
 
